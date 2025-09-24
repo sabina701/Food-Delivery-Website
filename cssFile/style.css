@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding:0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+#nav-bar{
+  display: flex;
+  position: sticky;
+  align-items: center;
+  top:0px; 
+}
+#nav-bar::before{
+  content:"";
+  background-color: black;
+  position: absolute;
+  opacity:0.3;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+   top:0px;
+  left:0px;
+}
+
+.logo img{
+  height:50px;
+  width:70px;
+  border-radius: 50%;
+  margin:3px 4px;
+  margin-left:23px;
+  
+}
+ #nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li a{
+ 
+  text-decoration: none;
+  color: white;
+  padding:3px 22px;
+   border-radius: 20px;
+  
+}
+ul li{
+   list-style: none;
+ padding: 5px 30px;
+    margin: 5px 1px; 
+    font-size:1.25rem;
+     font-family: "Alan Sans", sans-serif;
+   
+}
+ul li a:hover{
+  background-color: white;
+  color:black;
+  
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+     height: 422px;
+  padding:3px 200px;
+
+
+}
+#home::before{
+  content:"";
+  opacity:0.81;
+  position: absolute;
+  z-index: -1;
+  height: 476px;
+  width: 100%;
+  left:0px;
+  background: url('pizza.jpg') no-repeat center center/cover;
+  top:0px;
+}
+.h-primary{
+  font-size:2.55rem;
+  color:black;
+  text-align: center;
+  font-family: "Alan Sans", sans-serif;
+
+}
+h2-primary{
+  font-size:1.55rem;
+  color:black;
+  text-align: center;
+  font-family: "Alan Sans", sans-serif;
+  display: block;
+
+}
+#home p{
+  /* font-size:1.5rem; */
+  text-align: center;
+  color:black;
+  font-family: "Edu NSW ACT Cursive", cursive;
+
+}
+.btn{
+  background-color: brown;
+  color: white;
+  border-radius:9px;
+  font-size:1.2rem;
+  border:2px solid black;
+  padding:5px 10px;
+  cursor:pointer;
+}
+#Services{
+  display: flex;
+  margin:9px;
+
+ 
+}
+
+.box img{
+  height: 85px;
+    width: 112px;
+    margin: auto;
+    display: block;
+    padding:23px;
+}
+.center{
+  text-align: center;
+}
+.box{
+   border: 2px solid red;
+    text-align: center;
+    
+      background-color: rgb(241, 229, 229);
+      border-radius: 23px;
+      padding:23px;
+      margin:10px;
+      
+    
+}
+.box p{
+  margin-bottom:23px;
+}
+#client-section{
+  position:relative;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client-section::before{
+  content:"";
+  background: url("veggies.webp");
+  height:207px;
+  width:100%;
+  position:absolute;
+  opacity:0.3;
+  z-index: -1;
+
+
+}
+#client-items img{
+ 
+  width:59px;
+ padding:34px;
+}
+#contact{
+  position:relative;
+}
+#contact h1{
+  color:white;
+}
+#contact::before{
+  content:"";
+  height:100%;
+  width:100%;
+  position:absolute;
+  background: url('contact us.jpg');
+  z-index:-1;
+  opacity:0.75;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:34px;
+}
+#contact-box input,
+#contact-box textarea{
+  width:100%;
+  padding:0.5rem;
+  border-radius: 9px;
+  font-size:1.1rem;
+  
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+  font-size:1.5rem;
+  color:white;
+}
+.foot{
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
